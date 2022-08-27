@@ -105,7 +105,28 @@ button:hover {
     .container {
        display: grid;
        grid-template-columns: 1fr 1fr ;
-       max-width: 900px;
+       margin: 4rem;
+       max-width: 675px;
     }
 
+    .container article:last-child {
+        padding: 0 2.675rem;
+        height:100%;
+        border-radius:  0 0.675rem  0.675rem  0;
+    }
+
+    .container article:first-child img {
+        display:block;
+        border-radius:  0.675rem 0 0 0.675rem;
+    }
+
+    p {
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+   .container {
+        margin: 0.5rem
+   }
 }
