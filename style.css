@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+}
+
+h1 {
+    font-family: Fraunces;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+    font-size: 1rem;
+}
+
+.container {
+    display:flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+.container article:first-child img {
+    display:block;
+    max-width: 100%;
+    border-radius: 0.675rem 0.675rem 0 0;
+}
+
+.container article:last-child {
+    padding: 1.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 0.675rem 0.675rem;
+    height: 400px;   
+}
+
+.container ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.price{
+    font-family: Fraunces;
+    margin: 0 1rem 0 0;
+}
+
+.reduced {
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+.real {
+    text-decoration: line-through;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 0.675rem;
+    height: 3.5rem;
+    border: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: hsl(157, 36%, 17%);
+}
+
+.container button .btn_item {
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.container button img.btn_item {
+    width: 17px ;
+    height: 18px;
+}
+
+
+@media screen and (min-width: 640px) {
+    .container {
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+       max-width: 900px;
+    }
+
+}
